@@ -31,11 +31,40 @@ class App extends Component {
         </div>
       </div>
 
-
-
-
-    );
-  }
+      constructor(props) {
+          super(props);
+          this.state = {
+              searchResults: [
+                 {
+                  name: "Freedom",
+                  artist: "Beyonce",
+                  album: "Lemonade",
+                  id: 1
+                 },
+                 {
+                  name: "Stronger",
+                  artist: "Kanye West",
+                  album: "808's and Heartbreak",
+                  id: 2
+                 }
+               ],
+              playlistName: 'New Playlist',
+              playlistTracks: [
+                {
+                 name: "Rock",
+                 artist: "Dry Cell",
+                 album: "Disconnected",
+                 id: 1
+                },
+                {
+                 name: "Cool songs",
+                 artist: "Pink Floyd",
+                 album: "wish you were here",
+                 id: 2
+                }
+              ]
+          };
+      }
 }
 
 export default App;
