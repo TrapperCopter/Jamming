@@ -5,23 +5,21 @@ import './track.css';
 class Track extends Component {
   constructor(props) {
     super(props)
-    addTrack(event) {
-     this.props.onAdd(this.props.track);
-    }
+
+    this.addTrack = this.addTrack.bind(this);
   }
 
 
-renderAction() {
-
+  renderAction() {
     if (this.props.isRemoval) {
       return <a className="Track-action">-</a>
     }
     return <a className="Track-action">+</a>;
   }
 
-    addTrack() {
-        <Playlist onAdd = {this.props.track} />
-    }
+  addTrack(event) {
+   this.props.onAdd(this.props.track);
+  }
 
     render() {
     <div className="Track">
