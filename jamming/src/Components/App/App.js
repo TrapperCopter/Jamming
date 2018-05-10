@@ -16,9 +16,11 @@ class App extends React.Component {
       playlistTracks: []
     };
   }
-  this.addTrack() {
-    if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
-      return;
+  this.addTrack = this.addTrack.bind(this) {
+    addTrack() {
+      if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
+        return;
+      }
     }
   }
   render() {
