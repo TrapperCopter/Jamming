@@ -9,20 +9,20 @@ import Spotify from '../../util/Spotify';
 class App extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       searchResults: [],
       playlistName: 'New Playlist',
       playlistTracks: []
     };
+    this.addTrack = this.addTrack.bind(this)
   }
-  this.addTrack = this.addTrack.bind(this) {
+
     addTrack() {
       if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
         return;
       }
     }
-  }
+
   render() {
     return (
       <div>
