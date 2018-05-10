@@ -13,6 +13,7 @@ class Playlist extends Component {
     );
   }
   <TrackList tracks = {this.props.playlistTracks} />
+  <TrackList onAdd = {this.props.onAdd} />
 }
 
 export default Playlist;

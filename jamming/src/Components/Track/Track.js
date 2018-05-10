@@ -11,18 +11,18 @@ class Track extends Component {
   </div>
   <a className="Track-action"><!-- + or - will go here --></a>
 </div>
-
-renderAction = function() {
-    if (isRemoval === true) {
-      return -;
+<TrackList onAdd = {this.props.onAdd} />
+renderAction() {
+    if (this.props.isRemoval) {
+      return <a className="Track-action">-</a>
     }
-      else if (isRemoval === false) {
-        return +;
-        className  = Track-action;
-      }
+    return <a className="Track-action">+</a>;
+  }
+
+    addTrack() {
+        <Playlist onAdd = {this.props.track} />
     }
   }
 }
-
 
 export default Track;
