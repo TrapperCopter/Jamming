@@ -12,6 +12,7 @@ class Playlist extends Component {
 </div>
     );
   }
+  <TrackList tracks = {this.props.playlistTracks} />
 }
 
 export default Playlist;
