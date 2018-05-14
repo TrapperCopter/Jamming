@@ -14,6 +14,7 @@ class Playlist extends Component {
   }
   <TrackList tracks = {this.props.playlistTracks} />
   <TrackList onAdd = {this.props.onAdd} />
+  <TrackList onRemove = {this.props.onRemove} />
 }
 
 export default Playlist;

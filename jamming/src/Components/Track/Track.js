@@ -20,7 +20,10 @@ class Track extends Component {
   addTrack(event) {
    this.props.onAdd(this.props.track);
   }
-
+  
+  removeTrack(event) {
+    this.props.onRemove(this.props.track);
+  }
     render() {
     <div className="Track">
     <div className="Track-information">
