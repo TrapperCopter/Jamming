@@ -3,7 +3,15 @@ import logo from './logo.svg';
 import './Playlist.css';
 
 class Playlist extends Component {
+  super(props)
+  this.handleNameChange = this.handleNameChange.bind(this)
+
+  handleNameChange(){
+  
+  }
+
   render() {
+    <input onChange={this.handleNameChange} />
     return (
       <div className="Playlist">
       <input defaultValue={'New Playlist'}/>
