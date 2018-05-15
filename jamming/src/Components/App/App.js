@@ -18,6 +18,7 @@ class App extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
+    this.search = this.search.bind(this);
   }
     addTrack() {
       if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
@@ -27,9 +28,12 @@ class App extends React.Component {
     removeTrack(this.track) {
       this.state.playlistTracks = this.state.playlistTracks.filter(track => track.id);
     }
-
+// This might be wrong, Step 63 was confusing.
     savePlaylist(){
-
+      trackUIRs = []
+    }
+    search(search) {
+      console.log({this.search})
     }
 
     updatePlaylistName(name){
@@ -47,6 +51,7 @@ class App extends React.Component {
             <Playlist playlistTracks={this.state.playlistTracks} />
             <updatePlaylistName Playlist={this.state.onNameChange} />
             <savePlaylist Playlist={this.state.onSave} />
+            <search SearchBar={this.state.onSearch} />
           </div>
         </div>
       </div>

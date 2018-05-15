@@ -20,7 +20,7 @@ class Track extends Component {
   addTrack(event) {
    this.props.onAdd(this.props.track);
   }
-  
+
   removeTrack(event) {
     this.props.onRemove(this.props.track);
   }
@@ -30,7 +30,16 @@ class Track extends Component {
       <h3><!-- track name will go here --></h3>
       <p><!-- track artist will go here--> | <!-- track album will go here --></p>
     </div>
-    <a className="Track-action" onClick=this.addTrack><!-- + or - will go here --></a>
+    <a className="Track-action">
+      if (this.props.isRemoval) {
+        return <a className="Track-action" onClick={this.removeTrack}>-</a>
+      }
+      else {
+        return <a className="Track-action" onClick={this.addTrack}>+</a>;
+      }
+    }
+
+    </a>
   </div>
   <TrackList onAdd = {this.props.onAdd} />
   }
