@@ -3,13 +3,15 @@ Spotify () {
   let accessToken;
   const Spotify = {
     getAccessToken() {
-      if(accessToken) {
+      if(accessTokenMatch && expiresInMatch)
         return accessToken;
       }
+      else {
         window.location.href.match(
-          /access_token=([^&]*)/ //the part in parenthesis means to get the entire string
-          /expires_in=([^&]*)/
+          const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
+          const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
         )
+      }
     }
   }
 };
