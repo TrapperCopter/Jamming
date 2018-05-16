@@ -1,15 +1,17 @@
 useraccesstoken =
 Spotify () {
-  person.name = function() {
-    getAccessToken = function() {
-      if (useraccesstoken === true) {
-        return useraccesstoken
+  let accessToken;
+  const Spotify = {
+    getAccessToken() {
+      if(accessToken) {
+        return accessToken;
       }
-      else {
-
-      }
+        window.location.href.match(
+          /access_token=([^&]*)/ //the part in parenthesis means to get the entire string
+          /expires_in=([^&]*)/
+        )
     }
-  };
+  }
 };
 
 export default Spotify
