@@ -6,18 +6,18 @@ const Spotify = {
 
   search(term) {
     return
-    fetch('https://api.spotify.com/v1/search?type=track&q=${term}')
+    fetch('https://api.spotify.com/v1/search?type=track&q=${term}' ,
     {
         ID: track.id ,
         Name: track.name ,
         Artist: track.artist[0].name ,
         Album: track.album.name ,
         URI: track.uri
-      }.then(response => return response.json()).then(response.map([])) ,
+      }.then(response => return response.json()) ,
       {
         headers: {Authorization: `Bearer ${accessToken}`}
       }
-    )
+    ).then(response => response.map())
   }
 
 
