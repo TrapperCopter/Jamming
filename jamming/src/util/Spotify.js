@@ -18,13 +18,22 @@ const Spotify = {
     else {
       array=[
         ID: track.id ,
-        ...
-        ...
-        ...
+        Name: track.name ,
+        Artist: track.artist[0].name ,
+        Album: track.album.name ,
+        Uri: tracl.uri
       ]
     }
   }
 
+  getID(playlist, search.array) {
+    if (playlist = "" && search.array = "") {
+      return
+    }
+    else {
+      
+    }
+  }
 
   getAccessToken() {
     if (accessToken) {

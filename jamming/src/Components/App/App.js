@@ -33,7 +33,7 @@ class App extends React.Component {
       trackUIRs = []
     }
     search(search) {
-      console.log({this.search})
+      console.log({Spotify.search})
     }
 
     updatePlaylistName(name){
