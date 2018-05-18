@@ -33,10 +33,10 @@ const Spotify = {
       const accessToken = Spotify.getAccessToken();
       const headers = { Authorization: `Bearer ${accessToken}` };
       let userId;
-        return fetch(
-          return userID.json()
-          userID.json() = response.userID;
-        )
+      return fetch('https://api.spotify.com/v1/me', {
+        headers:
+        headers}).then(response => return response.json(
+        )).then(response => response.map(userId))
     }
   }
 
