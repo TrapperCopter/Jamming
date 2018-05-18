@@ -31,7 +31,10 @@ const Spotify = {
     }
     else {
       const accessToken = Spotify.getAccessToken();
-      const headers = Spotify.search().headers;
+      const headers = { Authorization: Bearer ${accessToken} };
+      let userID =
+      return userID.json()
+      userID.json() = userID;
     }
   }
 
