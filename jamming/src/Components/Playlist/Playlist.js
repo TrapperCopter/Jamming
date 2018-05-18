@@ -20,9 +20,11 @@ class Playlist extends Component {
 </div>
     );
   }
-  <TrackList tracks = {this.props.playlistTracks} />
-  <TrackList onAdd = {this.props.onAdd} />
-  <TrackList onRemove = {this.props.onRemove} />
+  const tracklistProps = (
+    <TrackList tracks = {this.props.playlistTracks} />
+    <TrackList onAdd = {this.props.onAdd} />
+    <TrackList onRemove = {this.props.onRemove} />
+  );
 }
 
 export default Playlist;
