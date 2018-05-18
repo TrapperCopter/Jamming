@@ -31,10 +31,12 @@ const Spotify = {
     }
     else {
       const accessToken = Spotify.getAccessToken();
-      const headers = { Authorization: Bearer ${accessToken} };
-      let userID =
-      return userID.json()
-      userID.json() = response.userID;
+      const headers = { Authorization: `Bearer ${accessToken}` };
+      let userId;
+        return fetch(
+          return userID.json()
+          userID.json() = response.userID;
+        )
     }
   }
 
