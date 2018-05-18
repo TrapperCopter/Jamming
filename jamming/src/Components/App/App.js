@@ -25,19 +25,19 @@ class App extends React.Component {
         return;
       }
     }
-    removeTrack(this.track) {
-      this.state.playlistTracks = this.state.playlistTracks.filter(track => track.id);
+    removeTrack(track) {
+      this.setState(playlistTracks = this.state.playlistTracks.filter(track => track.id));
     }
 // This might be wrong, Step 63 was confusing.
     savePlaylist(){
       trackUIRs = []
     }
-    search(search) {
-      console.log({Spotify.search})
+    search(term) {
+      Spotify.search(term);
     }
 
     updatePlaylistName(name){
-      this.setState({this.playlistName: name});
+      this.setState({playlistName: name});
     }
 
   render() {
