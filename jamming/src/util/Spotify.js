@@ -1,8 +1,6 @@
 let accessToken;
 const cliendID= "e0856715edfc4954b180a6d7ef15d93c";
 const redirectURL = "http://localhost:3000/";
-const accessToken = Spotify.getAccessToken();
-const headers = Spotify.search().headers;
 const Spotify = {
 
   search(term) {
@@ -32,7 +30,8 @@ const Spotify = {
       return
     }
     else {
-
+      const accessToken = Spotify.getAccessToken();
+      const headers = Spotify.search().headers;
     }
   }
 
