@@ -34,7 +34,7 @@ const Spotify = {
       const headers = { Authorization: Bearer ${accessToken} };
       let userID =
       return userID.json()
-      userID.json() = userID;
+      userID.json() = response.userID;
     }
   }
 
