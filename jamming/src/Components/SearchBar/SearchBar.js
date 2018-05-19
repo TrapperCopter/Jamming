@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import './SearchBar.css';
 
 class SearchBar extends Component {
-  constructor(props){
+  constructor(props) {
   super(props)
   this.search = this.search.bind(this);
   this.handleTermChange = this.handleTermChange.bind(this);
   this.state = {term: ''}
-}
+  }
   search() {
     this.props.onSearch(state.term)
   }
@@ -26,6 +26,7 @@ class SearchBar extends Component {
       </div>
     );
   }
+}
 
 
 export default SearchBar;
