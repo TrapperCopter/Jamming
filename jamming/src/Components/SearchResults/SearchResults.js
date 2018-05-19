@@ -10,6 +10,7 @@ class SearchResults extends Component {
           <TrackList />
           </div>
       );
+    }
       constructor(props) {
         super(props)
         this.state.searchResults = {
@@ -21,7 +22,6 @@ class SearchResults extends Component {
           })
       }
     }
-  }
 }
 
 export default SearchResults;
