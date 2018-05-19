@@ -3,6 +3,9 @@ const cliendID= "e0856715edfc4954b180a6d7ef15d93c";
 const redirectURL = "http://localhost:3000/";
 const Spotify = {
 
+
+
+
   search(term) {
     return
     fetch('https://api.spotify.com/v1/search?type=track&q=${term}',

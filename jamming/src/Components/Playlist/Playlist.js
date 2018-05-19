@@ -13,11 +13,11 @@ class Playlist extends Component {
 
   render() {
     const tracklistProps = (
-      <div>
-        <TrackList tracks = {this.props.playlistTracks} />
-        <TrackList onAdd = {this.props.onAdd} />
-        <TrackList onRemove = {this.props.onRemove} />
-      </div>
+      <TrackList
+        tracks = {this.props.playlistTracks}
+        onAdd = {this.props.onAdd}
+        onRemove = {this.props.onRemove}
+      />
     );
     return (
       <div className="Playlist">
